@@ -25,15 +25,18 @@
   <nav>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-3">
+      <div class="col-lg-9">
         <header>
         <h1>Athena Lee's Portfolio</h1>
         </header>    
       </div>
-      <div class="col-lg-9">
+      <div class="col-lg-3">
+        <div class="nav-link">
         <a href="#about-me">About</a>
         <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
+        </div>
       </div>
     </div>
   </div>
@@ -44,15 +47,19 @@
 <div class="jumbotron">
   <div class="container">
     <div class="row">
-      <div class="col-lg-3">
-    <img src="css/Avatar.png" alt="Athena avatar">
+      <div class="col-lg-5">
+    <img class="avatar" src="css/Avatar.png" alt="Athena avatar">
     </div>
-    <div class="col-lg-9">
-    <h1 class="display-4">Welcome to Athena Lee's portfolio</h1>
+    <div class="col-lg-7">
+      <div class="summary">
+    <h2> Welcome to Athena Lee's portfolio</h2>
     <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque quae molestias dolore quas provident reprehenderit eos voluptate doloribus, similique tempore error at fugiat.</p>
     </div>
+  </div>
 </div>
 </div>
+</div>
+
 
 
 <!-- Work section-->
@@ -90,60 +97,62 @@
     </div>   
 
     <!-- Work exmamples display with bootstrap cards-->
-    <div class="work-cards">
+
+    <div id="work" class="work-cards">
       <div class="container-fluid">
         <div class="row">
-
-          <div class="col-md-6 col-lg-3">
+          <div class="col-md-6 col-lg-3 m-3">
           <div class="card" style="width: 18rem;">
             <img class="First-Portfolio" src="css/old-port.png" alt="first porfolio screenshot">
             <div class="card-body">
-              <h5 class="card-title">First-Portfolio</h5>
+              <div class="card-title">First-Portfolio</div>
               <p class="card-text">My first ever portfolio created with HTML and CSS</p>
               <a href="#" class="btn btn-primary">View Portfolio</a>
             </div>
           </div>
         </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 m-3">
             <div class="card" style="width: 18rem;">
               <img class="refactor-challenge" src="css/Refactor.png" alt="refactor challenge screenshot">
               <div class="card-body">
-                <h5 class="card-title">Refactor Code Challenge</h5>
+                <div class="card-title">Refactor Code Challenge</div>
                 <p class="card-text">The first coding challenge in the skill bootcamp</p>
                 <a href="#" class="btn btn-primary">See Website</a>
               </div>
             </div>
           </div>
-              <div class="col-md-6 col-lg-3">
+              <div class="col-md-6 col-lg-3 m-3">
               <div class="card" style="width: 18rem;">
-                <img class="card-3-placehold" src="css/old-port.png" alt="first porfolio screenshot">
+                <img class="card-3-placehold" src="css/card 3.png" alt="first porfolio screenshot">
                 <div class="card-body">
-                  <h5 class="card-title">Card 3 Placehold</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam suscipit ea est.</p>
+                  <div class="card-title">Card 3 Placehold</div>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                   <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
               </div>
             </div>
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-3 m-3">
                 <div class="card" style="width: 18rem;">
-                  <img class="card-4-placehold" src="css/old-port.png" alt="first porfolio screenshot">
+                  <img class="card-4-placehold" src="css/card 4.png" alt="first porfolio screenshot">
                   <div class="card-body">
-                    <h5 class="card-title">Card 4 Placehold</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam suscipit ea est.</p>
+                    <div class="card-title">Card 4 Placehold</div>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
+
     
 <!--skill section-->
-<div class="Skill-section">
+<div id="skills" class="Skills-section">
   <div class="row">
     <div class="col-md-12 col-lg-4">
       <div class="section-name">
-      Skills
+        <h4>Skills</h4>
     </div>
     </div>
     <div class="col-md-12 col-lg-8">
@@ -160,11 +169,11 @@
 </div>
 
 <!--about section-->
-<div class="about-section">
+<div id="about" class="about-section">
   <div class="row">
     <div class="col-md-12 col-lg-4">
       <div class="section-name">
-      About
+      <h5>About</h5>
     </div>
     </div>
     <div class="col-md-12 col-lg-8">
@@ -180,7 +189,7 @@
 
 <!-- Contact-->
 <div id="contact">
-    <h4>Let's Connect!</h4>
+    <h6>Let's Connect!</h6>
 </div>
 <!-- Contact icons-->
     <section class="contact-info">
