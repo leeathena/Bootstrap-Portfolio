@@ -1,0 +1,246 @@
+:root {
+    --light-beige: #F0F1ED;
+    --medium-green: #808D63 ;
+    --dark-green: #4F6034;
+}
+
+
+body{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--light-beige);
+    padding-bottom: 100px;
+    margin: 0px;
+}
+
+/*header*/
+h1{
+    font-size: 2.5rem;
+    margin: 0 auto;
+    padding-block: 20px;
+    background-color: var(--dark-green);
+    color: var(--light-beige);
+    text-align: center;
+}
+
+/*navigation bar*/
+nav {
+    display: flex;
+    background-color: var(--light-beige);
+  }
+  
+nav a {
+    color: var(--dark-green);
+    padding: 14px 20px;
+    text-decoration:none;
+    text-align: center;
+  }
+
+nav a:hover {
+    background-color: white;
+  }
+
+/*about me section*/
+#about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    width: 1024px;
+    margin: 20px auto;
+}
+
+#avatar {
+    width: 400px;
+    padding: 50px
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-decoration-thickness: 10px;
+    text-decoration-color: var(--medium-green);
+    line-height: 2.5;
+}
+
+#summary {
+    line-height: 1.2;
+    width: 80%;
+}
+
+/*Work section*/
+h3 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-decoration-thickness: 10px;
+    text-decoration-color: var(--medium-green);
+    line-height: 2.5;
+}
+
+
+#work {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    width: 1024px;
+    margin: 20px auto;
+}
+
+#work-decor {
+    width: 310px;
+    margin: 0px 50px 0px 50px;
+}
+
+/*Work section: grids design*/
+.work-grid {
+    margin: 10px auto;
+    display: grid;
+    height: auto;
+    width:auto;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 50% 25% 25%;    
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    grid-template-areas:
+    "placeholder1 placeholder2 placeholder3"
+    "placeholder1 placeholder4 placeholder4";
+}
+
+#placeholder1 {
+    grid-area: placeholder1;
+}
+
+#placeholder2 {
+    grid-area: placeholder2;
+}
+
+#placeholder3 {
+    grid-area: placeholder3;
+}
+
+#placeholder4 {
+    grid-area: placeholder4;
+}
+
+.work-grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.work-grid section {
+    position:relative
+}
+
+.work-grid header{
+    position: absolute;
+    top: 50%; 
+    left: 10%;
+    color: white;
+    font-size: 1.5rem;
+
+}
+
+
+/*contact section*/
+h4 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-decoration-thickness: 10px;
+    text-align: center;
+    text-decoration-color: var(--medium-green);
+    padding:100px;
+    line-height: 2.5;
+    padding-bottom: 20px;
+}
+
+
+.contact-info{
+display: flex;
+justify-content:center;
+align-items: flex-start;
+}
+
+.contact-info img {
+height: 50px;
+width: auto;
+margin: 20px;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*mobile screen diplay*/
+@media screen and (max-width: 768px) {
+
+    /*About me section*/
+    #about-me {
+        display: inline;
+        text-align: center;      
+        padding: 0px;
+        width: auto;
+        margin: 20px auto;
+    }
+
+    #summary {
+        margin: 5px auto;
+    }
+
+    /*Work section*/
+    #work {
+        display: inline;
+        text-align: center;      
+        padding: 0px;
+        width: auto;
+        margin: 50px 20px 0px 20px;
+    }
+    
+    #work-decor {
+        display: none;
+    }
+    
+    
+    .work-grid {
+        margin: 0px auto;
+        display: grid;
+        height: auto;
+        width:auto;
+        margin: 5px;
+        grid-template-rows: 300px 300px 300px 300px;
+        grid-template-columns: 1fr;    
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        grid-template-areas:
+        "placeholder1"
+        "placeholder2"
+        "placeholder3"
+        "placeholder4";
+    }
+    
+   
+    .work-grid img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .work-grid section {
+        position:relative
+    }
+    
+    .work-grid header{
+        position: absolute;
+        top: 50%;
+        left: 5%;
+        color: white;
+        font-size: 1.5rem;
+    }
+    
