@@ -63,13 +63,10 @@ background-position: center;
 background-repeat: no-repeat;
 }
 
+
 .avatar{
     width: 310px;
-    margin: 0px 50px 0px 50px;
-}
-
-.summary {
-margin 50px 0px;
+    margin: 0px 50px;
 }
 
 
@@ -79,9 +76,14 @@ h2{
     text-decoration: underline;
     text-decoration-thickness: 10px;
     text-decoration-color: var(--medium-green);
-    line-height: 2.5;
+    line-height: 2;
 }
 
+.summary {
+    margin 50px 0px;
+    }
+
+    
 /*Work section*/
 
 h3{
@@ -164,22 +166,39 @@ h3{
 }
 
 
-h4, h5{
-    font-size: 1.5rem;
-    text-decoration: underline;
-    text-decoration-thickness: 10px;
-    text-decoration-color: var(--medium-green);
-    line-height: 2.5;
-    text-align: right;
+.skills-section {
+background-color:  rgb(1, 44, 1);
+border: 30px solid rgb(1, 44, 1);
+color: var(--light-beige);
 }
 
-/*skill section*/
-.Skills-section {
-padding: 50px;
+
+/*heading for skill and about section*/
+
+    h4, h5{
+        font-size: 1.5rem;
+        text-decoration: underline;
+        text-decoration-thickness: 10px;
+        text-decoration-color: var(--medium-green);
+        line-height: 2.5;
+        text-align: right;
+    }  
+    
+/*About section*/
+
+.section-name{
+margin: 50px 0px;
+}
+.about-section .section-content{
+margin: 30px;
+padding: 0px;
 }
 
-ul {
-color: #4F6034;
+.about-section .btn {
+display: flex;
+width:fit-content;
+justify-content: left;
+margin: 10px;
 }
 
 /*contact section*/
@@ -217,18 +236,6 @@ img {
 /*mobile screen diplay*/
 @media screen and (max-width: 768px) {
 
-    /*About me section*/
-    #about-me {
-        display: inline;
-        text-align: center;      
-        padding: 0px;
-        width: auto;
-        margin: 20px auto;
-    }
-
-    #summary {
-        margin: 5px auto;
-    }
 
     /*Work section*/
     #work {
@@ -279,20 +286,18 @@ img {
         color: white;
         font-size: 1.5rem;
     }
-    
-/*about me section*/
-#about-me {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-    width: 1024px;
-    margin: 20px auto;
+
+
+    h4, h5{
+        text-align: center;
+    }  
+
+.section-content {
+text-align: center;
 }
 
-
-
-#summary {
-    line-height: 1.2;
-    width: 80%;
+.about-section .btn {
+display: flex;
+width:fit-content;
+justify-content: center;
 }
