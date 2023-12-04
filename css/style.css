@@ -51,7 +51,8 @@ nav a {
 
 nav a:hover {
     background-color: white;
-  }
+    color: #4F6034;
+}
 
 /*jumbotron hero section*/
 .jumbotron {
@@ -66,7 +67,7 @@ background-repeat: no-repeat;
 
 .avatar{
     width: 310px;
-    margin: 0px 50px;
+    margin: 0px auto;
 }
 
 
@@ -99,13 +100,12 @@ h3{
     justify-content: flex-start;
     align-items: center;
     padding: 0px;
-    width: 1024px;
     margin: 20px auto;
 }
 
 #work-decor {
     width: 310px;
-    margin: 0px 50px 0px 50px;
+    margin: 0px 30px 0px 30px;
 }
 
 /*Work section: grids design*/
@@ -161,9 +161,9 @@ h3{
 /*Work card display section*/
 
 .work-cards{
-    background-image: url(../css/work-decor.png);
+    background-image: url(../css/work-card-decor.png);
     background-size:contain; 
-    background-position: left; 
+    background-position: right; 
     background-repeat: no-repeat;
     height: auto;
     width: max-content;
@@ -199,9 +199,7 @@ h4, h5{
 }
 
     
-/*About section*/
-
-
+/*About section only*/
 .about-section .section-content{
 margin: 50px auto 20px 20px;
 }
@@ -213,6 +211,13 @@ justify-content: left;
 margin: 20px;
 }
 
+/* All button design*/
+.btn {
+    border-color: var(--dark-green);
+    background-color: transparent;
+    color: var(--dark-green);
+}
+
 /*contact section*/
 h6 {
     font-size: 1.5rem;
@@ -220,11 +225,8 @@ h6 {
     text-decoration-thickness: 10px;
     text-align: center;
     text-decoration-color: var(--medium-green);
-    padding:100px;
-    line-height: 2.5;
-    padding-bottom: 20px;
+    line-height: 1rem;
 }
-
 
 .contact-info{
 display: flex;
@@ -236,6 +238,12 @@ align-items: flex-start;
 height: 50px;
 width: auto;
 margin: 20px;
+border-radius: 50%;
+transition: box-shadow 0.3s
+}
+
+.contact-info img:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -243,6 +251,8 @@ img {
     width: 100%;
     height: auto;
 }
+
+
 
 
 /*mobile screen diplay*/
