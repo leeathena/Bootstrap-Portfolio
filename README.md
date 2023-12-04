@@ -22,4 +22,4 @@ I used reset.css file from bootcamp/class-repo/06-stu-css-variable
 
 
 ## Deployed Page
-<strong> [Deployed page]() </strong>
+<strong> [Deployed page](https://leeathena.github.io/Bootstrap-Portfolio/) </strong>
