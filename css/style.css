@@ -72,7 +72,7 @@ background-repeat: no-repeat;
 
 h2{
     font-size: 2.5rem;
-    color: var(--dark-green);
+    color: white;
     text-decoration: underline;
     text-decoration-thickness: 10px;
     text-decoration-color: var(--medium-green);
@@ -80,7 +80,7 @@ h2{
 }
 
 .summary {
-    margin 50px 0px;
+    color: white;
     }
 
     
@@ -160,9 +160,13 @@ h3{
 
 /*Work card display section*/
 
-.card {
+.work-cards{
+    background-image: url(../css/work-decor.png);
+    background-size:contain; 
+    background-position: left; 
+    background-repeat: no-repeat;
     height: auto;
-    width:auto;
+    width: max-content;
 }
 
 
@@ -175,30 +179,38 @@ color: var(--light-beige);
 
 /*heading for skill and about section*/
 
-    h4, h5{
-        font-size: 1.5rem;
-        text-decoration: underline;
-        text-decoration-thickness: 10px;
-        text-decoration-color: var(--medium-green);
-        line-height: 2.5;
-        text-align: right;
-    }  
+    /*heading style*/
+h4, h5{
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-decoration-thickness: 10px;
+    text-decoration-color: var(--medium-green);
+    line-height: 2.5;
+    text-align: right;
+}  
+
+.section-name{
+    margin: 50px 0px;
+    }
+
+    /*section content layout*/
+.section-content {
+    padding-right: 200px;
+}
+
     
 /*About section*/
 
-.section-name{
-margin: 50px 0px;
-}
+
 .about-section .section-content{
-margin: 30px;
-padding: 0px;
+margin: 50px auto 20px 20px;
 }
 
 .about-section .btn {
 display: flex;
 width:fit-content;
 justify-content: left;
-margin: 10px;
+margin: 20px;
 }
 
 /*contact section*/
