@@ -175,12 +175,6 @@ h3{
 }
 
 
-.skills-section {
-    background-color:  rgb(1, 44, 1);
-    border: 30px solid rgb(1, 44, 1);
-    color: var(--light-beige);
-}
-
 
 /*Layout for skill and about section*/
 
@@ -203,6 +197,12 @@ h4, h5{
     padding-right: 200px;
 }
 
+/*Layout Skills section only*/
+.skills-section {
+    background-color:  rgb(1, 44, 1);
+    border: 30px solid rgb(1, 44, 1);
+    color: var(--light-beige);
+}
     
 /*Layout About section only*/
     .about-section .section-content{
