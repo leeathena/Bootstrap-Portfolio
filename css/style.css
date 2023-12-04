@@ -56,12 +56,12 @@ nav a:hover {
 
 /*jumbotron hero section*/
 .jumbotron {
-padding: 70px;
-color: var(--dark-green);
-background-image: url(../css/banner.png); 
-background-size: cover; 
-background-position: center; 
-background-repeat: no-repeat;
+    padding: 70px;
+    color: var(--dark-green);
+    background-image: url(../css/banner.png); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
 }
 
 
@@ -108,7 +108,7 @@ h3{
     margin: 0px 30px 0px 30px;
 }
 
-/*Work section: grids design*/
+    /*Work section: grids design*/
 .work-grid {
     margin: 10px auto;
     display: grid;
@@ -158,26 +158,31 @@ h3{
 
 }
 
-/*Work card display section*/
+    /*Work card display section*/
 
 .work-cards{
     background-image: url(../css/work-card-decor.png);
     background-size:contain; 
     background-position: right; 
     background-repeat: no-repeat;
-    height: auto;
-    width: max-content;
+}
+
+
+.card{
+    min-height: 350px;
+    width: 100%;
+    margin: 10px auto;
 }
 
 
 .skills-section {
-background-color:  rgb(1, 44, 1);
-border: 30px solid rgb(1, 44, 1);
-color: var(--light-beige);
+    background-color:  rgb(1, 44, 1);
+    border: 30px solid rgb(1, 44, 1);
+    color: var(--light-beige);
 }
 
 
-/*heading for skill and about section*/
+/*Layout for skill and about section*/
 
     /*heading style*/
 h4, h5{
@@ -199,16 +204,16 @@ h4, h5{
 }
 
     
-/*About section only*/
-.about-section .section-content{
-margin: 50px auto 20px 20px;
+/*Layout About section only*/
+    .about-section .section-content{
+    margin: 50px auto 20px 20px;
 }
 
 .about-section .btn {
-display: flex;
-width:fit-content;
-justify-content: left;
-margin: 20px;
+    display: flex;
+    width:fit-content;
+    justify-content: left;
+    margin: 20px;
 }
 
 /* All button design*/
@@ -218,7 +223,7 @@ margin: 20px;
     color: var(--dark-green);
 }
 
-/*contact section*/
+/*Contact section*/
 h6 {
     font-size: 1.5rem;
     text-decoration: underline;
@@ -229,17 +234,17 @@ h6 {
 }
 
 .contact-info{
-display: flex;
-justify-content:center;
-align-items: flex-start;
+    display: flex;
+    justify-content:center;
+    align-items: flex-start;
 }
 
 .contact-info img {
-height: 50px;
-width: auto;
-margin: 20px;
-border-radius: 50%;
-transition: box-shadow 0.3s
+    height: 50px;
+    width: auto;
+    margin: 20px;
+    border-radius: 50%;
+    transition: box-shadow 0.3s
 }
 
 .contact-info img:hover {
@@ -309,17 +314,35 @@ img {
         font-size: 1.5rem;
     }
 
-
+    /*About and Skills section*/
     h4, h5{
         text-align: center;
+        line-height: 1rem;  
+        margin: 0px;
     }  
 
-.section-content {
-text-align: center;
-}
+    
+    .section-content {
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    }
 
-.about-section .btn {
-display: flex;
-width:fit-content;
-justify-content: center;
-}
+
+    /*Skills section only*/
+    .skills-section{
+        border: 0px;
+    }
+
+    /*.About section only*/
+
+    .about-section .section-content{
+        margin: 0px auto;
+    }
+
+    .about-section .btn {
+        text-align: center;
+        padding: 5px;
+        margin: 10px auto;
+    }
+    }
